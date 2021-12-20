@@ -1,0 +1,91 @@
+body{
+    font-family: Montserrat;
+    font-size: 14px;
+
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: url('../images/bgcpage_home.png') center no-repeat;
+    background-size: cover;
+}
+
+*,
+*before,
+*after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.header_logo{
+    color: #ffffff;
+
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header_nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    padding: 10px 20px;
+
+    border: 1px solid cornsilk;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: .3s linear;
+
+}
+
+.header_nav_link:hover{
+    color:black;
+    background-color:cornsilk;
+}
+
+.main_div{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 800px;
+    left: 750px;
+}
+
+.main_button{
+    color: #ffffff;
+    background: #99862A;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: 1px solid #99862A;
+    margin: 15px;
+    padding: 15px 30px;
+}
+
+.main_button:hover{
+    color:black;
+    background-color:cornsilk;
+}

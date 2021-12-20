@@ -1,0 +1,49 @@
+body{
+    background: black;
+    color: blanchedalmond;
+}
+
+.header{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.header_logo{
+    color: #ffffff;
+
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header_nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    padding: 10px 20px;
+
+    border: 1px solid cornsilk;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: .3s linear;
+
+}
+
+.header_nav_link:hover{
+    color:black;
+    background-color:cornsilk;
+}
