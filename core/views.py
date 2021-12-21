@@ -1,36 +1,36 @@
 from flask import Flask, request, render_template, url_for
+from flask.json import jsonify
 from jinja2 import Markup
 
-app = Flask(__name__)
+from app import app
 
 
 #Основная страница
 @app.route('/')
 # @app.route('/home')
 def main_page():
-    # result_string = 'Hello, World!'
-    # data = request.args
-    # key = data.get('key')
-
-    # if key:
-    #     result_string += key
-
     return render_template('main_page.html')
-    # return Markup(f'<div><h1>qwer</h1>{result_string}</p><button>asdf</button></div>')
 
 
 #Каталог
 @app.route('/catalogue')
 def catalogue():
     data = request.args
-    print(data)
+    # print(data)
     return render_template('catalogue.html')
 
 
 # Доствка
 @app.route('/delivery')
 def delivery():
-    return render_template('delivery.html')
+
+    res = [
+        {'name0': 'name1', 'processor': 'intel-7', 'price': 100},
+        {'name1': 'name2', 'processor': 'intel-7', 'price': 200},
+        {'name2': 'name3', 'processor': 'intel-7', 'price': 300},
+        {'name3': 'name4', 'processor': 'intel-7', 'price': 400}
+    ]
+    return render_template('delivery.html', name='asd', if_price=0)
 
 
 #Коллекции
