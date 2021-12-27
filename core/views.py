@@ -7,7 +7,7 @@ from app import app
 
 #Основная страница
 @app.route('/')
-# @app.route('/home')
+@app.route('/home')
 def main_page():
     return render_template('main_page.html')
 
@@ -23,14 +23,7 @@ def catalogue():
 # Доствка
 @app.route('/delivery')
 def delivery():
-
-    res = [
-        {'name0': 'name1', 'processor': 'intel-7', 'price': 100},
-        {'name1': 'name2', 'processor': 'intel-7', 'price': 200},
-        {'name2': 'name3', 'processor': 'intel-7', 'price': 300},
-        {'name3': 'name4', 'processor': 'intel-7', 'price': 400}
-    ]
-    return render_template('delivery.html', name='asd', if_price=0)
+    return render_template('delivery.html')
 
 
 #Коллекции
