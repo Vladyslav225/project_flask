@@ -1,12 +1,13 @@
-from flask import Flask, request, render_template, url_for
-from flask.json import jsonify
-from jinja2 import Markup
+from flask import Flask, request, render_template, url_for,send_from_directory
+from flask import Response, request, jsonify
+# from jinja2 import Markup
 
 from app import app
 
+# from project_flask.models import User
+
 
 #Основная страница
-@app.route('/')
 @app.route('/home')
 def main_page():
     return render_template('main_page.html')

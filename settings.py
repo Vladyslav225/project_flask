@@ -1,4 +1,4 @@
 MONGODB_SETINGS = {
     'ALIAS': 'default',
-    'host': 'mongodb://localhost/mongos_flask'
+    'host': 'mongodb://localhost/test_db'
     }
