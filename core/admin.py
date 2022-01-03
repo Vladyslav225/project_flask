@@ -1,6 +1,8 @@
 from flask_admin.contrib.mongoengine import ModelView
 from flask_admin.contrib.mongoengine.filters import FilterEqual, FilterLike
-from models import User
+
+from core.models import User
+
 from app import admin
 
 class UserModelView(ModelView):
@@ -12,5 +14,4 @@ class UserModelView(ModelView):
 print('admin')
 
 
-
-admin.add_view(ModelView(User))
+admin.add_view(UserModelView(User))
